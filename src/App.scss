@@ -1,0 +1,100 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+
+$primary-color: rgb(0, 76, 102);
+$secondary-color: rgb(102, 147, 163);
+$secondary-color2: rgb(229, 237, 239);
+$heading: rgb(178, 186, 209);
+$hover-color: rgb(91, 94, 95);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+//General
+.header {
+  color: $heading;
+}
+//Navbar Scss
+.PageColor {
+  background: $primary-color;
+  padding: 10px;
+  .Page-Info {
+    padding: 12px;
+    color: $secondary-color2;
+  }
+  #button1:hover {
+    text-decoration: none;
+    color: $hover-color;
+  }
+  #button1 {
+    text-decoration: none;
+  }
+}
+//Contact Info
+.ContactColor {
+  background: $secondary-color2;
+  .ContactContain {
+    background: $primary-color;
+  }
+  .Contactheader {
+    padding: 12px;
+    color: $primary-color;
+  }
+  #button2 {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+  #button2:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+//Home Page Scss
+.homeBackground {
+  background: url("./WasherPic.png") no-repeat center center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  color: $white;
+  z-index: 1;
+
+  .homeList {
+    p {
+      padding-right: 5px;
+    }
+  }
+}
+.homeBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 725px) {
+  #remove {
+    display: none;
+  }
+
+  .homeList {
+    font-size: 20px;
+  }
+  #button2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 494px) {
+  .homeList {
+    font-size: 15px;
+  }
+  #button2 {
+    font-size: 15px;
+  }
+}
