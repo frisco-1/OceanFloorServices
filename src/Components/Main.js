@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 import AboutPage from './AboutPage';
 import Contact from './Contact';
+import Services from './Services';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function Main() {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/aboutus' component={AboutPage} />
+          <Route exact path='/services' component={Services}/>
           <Route exact path='/contact' component={Contact}/>
         </Switch>
 

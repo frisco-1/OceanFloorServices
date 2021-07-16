@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
 
 function NAVBAR() {
   return (
@@ -12,12 +12,8 @@ function NAVBAR() {
 
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/aboutus">About Us</Nav.Link>
-            <NavDropdown title="Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/tile">Tile</NavDropdown.Item>
-              <NavDropdown.Item href="/mexican-tile">Mexican Tile</NavDropdown.Item>
-              <NavDropdown.Item href="/marble-floor">Marble Floor</NavDropdown.Item>
-              <NavDropdown.Item href="/shower-regrout">Shower Regrout</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/services">Services</Nav.Link>
+            
             <Nav.Link href="/photo-gallery">Photo Gallery</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
