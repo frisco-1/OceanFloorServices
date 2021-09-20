@@ -7,8 +7,10 @@ import Footer from './Footer';
 import AboutPage from './AboutPage';
 import Contact from './Contact';
 import Services from './Services';
+import PhotoGallery from './PhotoGallery';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 
 function Main() {
   return (
@@ -21,6 +23,7 @@ function Main() {
           <Route exact path='/aboutus' component={AboutPage} />
           <Route exact path='/services' component={Services}/>
           <Route exact path='/contact' component={Contact}/>
+          <Route exact path='/photo-gallery' component={PhotoGallery}/>
         </Switch>
 
         <Footer/>
